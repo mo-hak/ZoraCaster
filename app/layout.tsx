@@ -10,14 +10,14 @@ import { Providers } from "./providers";
 const embedMetadata = {
   version: "1",
   // IMPORTANT: Replace this with a real image URL after deployment
-  imageUrl: "https://your-app-url.com/frame-image.png", 
+  imageUrl: "https://zora-caster.vercel.app/frame-image.png", 
   button: {
     title: "Launch Swap App",
     action: {
       type: "launch_frame", // This action opens the Mini App
       name: "0x Swap App",
       // IMPORTANT: Replace this with your deployed app's URL
-      url: "https://your-app-url.com", 
+      url: "https://zora-caster.vercel.app", 
     }
   }
 };

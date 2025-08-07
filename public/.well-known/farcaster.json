@@ -1,16 +1,16 @@
 {
     "accountAssociation": {
-      "header": "REPLACE_THIS_LATER",
-      "payload": "REPLACE_THIS_LATER",
-      "signature": "REPLACE_THIS_LATER"
+      "header": "eyJmaWQiOjExNjI3ODMsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg1MUE3MWY4YTkwNjEwN0MzQzk3OGQxMjgyQTFmMGRBMWYwOEVmMTBGIn0",
+    "payload": "eyJkb21haW4iOiJ6b3JhLWNhc3Rlci52ZXJjZWwuYXBwIn0",
+    "signature": "MHgxYTk0Y2I5YzM1OGM4NzA1ZjUwMzVmZDMxZWU5N2U0ZDMzMjdiNDkwNTczOGQ5ZWU2Y2U5NTM5OWRlZWI2OTg5NmMwYWY5ZDQ0MTdiNDQyYTcwMmVjMTBhYjRmNDZhNDIwMjA1MDkwOTZmMGM4NmU5ZjhlYjlkMjVmYWJiNDI2MzFj"
     },
     "miniapp": {
       "version": "1",
       "name": "0x Swap App",
-      "iconUrl": "https://your-app-url.com/icon.png",
-      "homeUrl": "https://your-app-url.com",
+      "iconUrl": "https://zora-caster.vercel.app/icon.png",
+      "homeUrl": "https://zora-caster.vercel.app.com",
       "description": "A Mini App for swapping tokens on Base, powered by the 0x Protocol.",
-      "imageUrl": "https://your-app-url.com/frame-image.png",
+      "imageUrl": "https://zora-caster.vercel.app/frame-image.png",
       "buttonTitle": "Launch Swap"
     }
   }
