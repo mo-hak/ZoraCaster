@@ -51,7 +51,7 @@ export const MAINNET_TOKENS: Token[] = [
     decimals: 18,
     address: "0x1111111111166b7fe7bd91427724b487980afc69",
     logoURI:
-      "https://raw.githubusercontent.com/mo-hak/ZoraCaster/public/zora.png",
+      "/Zorb.svg",
   },
 ];
 
@@ -81,7 +81,7 @@ export const MAINNET_TOKENS_BY_SYMBOL: Record<string, Token> = {
     decimals: 18,
     address: "0x1111111111166b7fe7bd91427724b487980afc69",
     logoURI:
-      "https://raw.githubusercontent.com/mo-hak/ZoraCaster/public/zora.png",
+      "/Zorb.svg",
   },
 };
 
@@ -95,7 +95,7 @@ export const MAINNET_TOKENS_BY_ADDRESS: Record<string, Token> = {
     logoURI:
       "https://raw.githubusercontent.com/maticnetwork/polygon-token-assets/main/assets/tokenAssets/weth.svg",
   },
-  "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913": {
+  "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913": {
     chainId: 8453,
     name: "USD Coin",
     symbol: "USDC",
@@ -111,6 +111,6 @@ export const MAINNET_TOKENS_BY_ADDRESS: Record<string, Token> = {
     decimals: 18,
     address: "0x1111111111166b7fe7bd91427724b487980afc69",
     logoURI:
-      "https://raw.githubusercontent.com/mo-hak/ZoraCaster/public/zora.png",
+      "/Zorb.svg",
   },
 };

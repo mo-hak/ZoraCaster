@@ -108,16 +108,16 @@ export default function QuoteView({
           <div className="text-xl mb-2 text-white">You pay</div>
           <div className="flex items-center text-lg sm:text-3xl text-white">
             <Image
-              alt={sellTokenInfo(chainId).symbol}
+              alt={sellTokenInfo(chainId)?.symbol || 'Token'}
               className="h-9 w-9 mr-2 rounded-md"
-              src={sellTokenInfo(chainId || 8453)?.logoURI}
+              src={sellTokenInfo(chainId)?.logoURI || '/next.svg'}
               width={9}
               height={9}
             />
             <span>
-              {formatUnits(quote.sellAmount, sellTokenInfo(chainId).decimals)}
+              {formatUnits(quote.sellAmount, sellTokenInfo(chainId)?.decimals || 18)}
             </span>
-            <div className="ml-2">{sellTokenInfo(chainId).symbol}</div>
+            <div className="ml-2">{sellTokenInfo(chainId)?.symbol || 'Unknown'}</div>
           </div>
         </div>
 
@@ -126,17 +126,17 @@ export default function QuoteView({
           <div className="flex items-center text-lg sm:text-3xl text-white">
             <img
               alt={
-                MAINNET_TOKENS_BY_ADDRESS[price.buyToken.toLowerCase()].symbol
+                MAINNET_TOKENS_BY_ADDRESS[price.buyToken.toLowerCase()]?.symbol || 'Token'
               }
               className="h-9 w-9 mr-2 rounded-md"
               src={
-                MAINNET_TOKENS_BY_ADDRESS[price.buyToken.toLowerCase()].logoURI
+                MAINNET_TOKENS_BY_ADDRESS[price.buyToken.toLowerCase()]?.logoURI || '/next.svg'
               }
             />
             <span>
-              {formatUnits(quote.buyAmount, buyTokenInfo(chainId).decimals)}
+              {formatUnits(quote.buyAmount, buyTokenInfo(chainId)?.decimals || 18)}
             </span>
-            <div className="ml-2">{buyTokenInfo(chainId).symbol}</div>
+            <div className="ml-2">{buyTokenInfo(chainId)?.symbol || 'Unknown'}</div>
           </div>
         </div>
 
@@ -150,11 +150,11 @@ export default function QuoteView({
                 Number(
                   formatUnits(
                     BigInt(quote.fees.integratorFee.amount),
-                    buyTokenInfo(chainId).decimals
+                    buyTokenInfo(chainId)?.decimals || 18
                   )
                 ) +
                 " " +
-                buyTokenInfo(chainId).symbol
+                (buyTokenInfo(chainId)?.symbol || 'Unknown')
               : null}
           </div>
           {/* Tax Information Display */}
@@ -162,7 +162,7 @@ export default function QuoteView({
             {quote.tokenMetadata.buyToken.buyTaxBps &&
               quote.tokenMetadata.buyToken.buyTaxBps !== "0" && (
                 <p>
-                  {buyTokenInfo(chainId).symbol +
+                  {(buyTokenInfo(chainId)?.symbol || 'Unknown') +
                     ` Buy Tax: ${formatTax(
                       quote.tokenMetadata.buyToken.buyTaxBps
                     )}%`}
@@ -171,7 +171,7 @@ export default function QuoteView({
             {quote.tokenMetadata.sellToken.sellTaxBps &&
               quote.tokenMetadata.sellToken.sellTaxBps !== "0" && (
                 <p>
-                  {sellTokenInfo(chainId).symbol +
+                  {(sellTokenInfo(chainId)?.symbol || 'Unknown') +
                     ` Sell Tax: ${formatTax(
                       quote.tokenMetadata.sellToken.sellTaxBps
                     )}%`}
