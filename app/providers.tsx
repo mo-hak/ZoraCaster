@@ -43,7 +43,7 @@ const connectors = connectorsForWallets(
     },
   ],
   {
-    appName: "0x Swap Demo App",
+    appName: "ZoraSwap",
     projectId,
   }
 );

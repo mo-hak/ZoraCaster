@@ -170,22 +170,8 @@ export default function PriceView({
 
       <div className="container mx-auto p-10">
         <header className="text-center py-4">
-          <h1 className="text-3xl font-bold">0x Swap Demo</h1>
+          <h1 className="text-3xl font-bold">ZoraSwap</h1>
         </header>
-
-        <p className="text-md text-center p-4 text-gray-500">
-          Check out the{" "}
-          <u className="underline">
-            <a href="https://0x.org/docs/">0x Docs</a>
-          </u>{" "}
-          and{" "}
-          <u className="underline">
-            <a href="https://github.com/0xProject/0x-examples/tree/main">
-              Code
-            </a>
-          </u>{" "}
-          to build your own
-        </p>
 
         <div className="bg-slate-200 dark:bg-slate-800 p-4 rounded-md mb-3">
           <label htmlFor="sell" className="text-gray-300 mb-2 mr-2">
