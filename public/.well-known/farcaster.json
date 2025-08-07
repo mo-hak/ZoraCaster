@@ -1,0 +1,16 @@
+{
+    "accountAssociation": {
+      "header": "REPLACE_THIS_LATER",
+      "payload": "REPLACE_THIS_LATER",
+      "signature": "REPLACE_THIS_LATER"
+    },
+    "miniapp": {
+      "version": "1",
+      "name": "0x Swap App",
+      "iconUrl": "https://your-app-url.com/icon.png",
+      "homeUrl": "https://your-app-url.com",
+      "description": "A Mini App for swapping tokens on Base, powered by the 0x Protocol.",
+      "imageUrl": "https://your-app-url.com/frame-image.png",
+      "buttonTitle": "Launch Swap"
+    }
+  }
