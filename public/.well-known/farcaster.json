@@ -8,7 +8,7 @@
       "version": "1",
       "name": "0x Swap App",
       "iconUrl": "https://zora-caster.vercel.app/icon.png",
-      "homeUrl": "https://zora-caster.vercel.app.com",
+      "homeUrl": "https://zora-caster.vercel.app",
       "description": "A Mini App for swapping tokens on Base, powered by the 0x Protocol.",
       "imageUrl": "https://zora-caster.vercel.app/frame-image.png",
       "buttonTitle": "Launch Swap"
